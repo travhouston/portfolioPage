@@ -1,0 +1,226 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Cairo', serif;
+}
+
+
+#mainNav {
+  background-color: rgba(33, 37, 41, 0.6);
+}
+
+#skills {
+  background-color: rgba(33, 37, 41);
+}
+
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px rgba(33, 37, 41);
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../images/Morocco2.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+.skill-icon {
+  background-color: none;
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.personality-icon {
+  background-color: none;
+  color: #1D809F;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  text-shadow: 1px 1px rgba(33, 37, 41);
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: .7rem;
+}
+
+@media (min-width: 450px) {
+  .portfolio-item .caption .caption-content p {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+.portfolio-item {
+  max-width: none;
+}
+.portfolio-item .caption {
+  transition: clip-path 0.5s ease-out, background-color 0.7s;
+  clip-path: inset(0px);
+}
+.portfolio-item .caption .caption-content {
+  transition: opacity 0.5s;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+}
+.portfolio-item img {
+  transition: clip-path 0.5s ease-out;
+  clip-path: inset(-1px);
+}
+.portfolio-item:hover img {
+  clip-path: inset(2rem);
+}
+.portfolio-item:hover .caption {
+  background-color: rgba(29, 128, 159, 0.9);
+  clip-path: inset(2rem);
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    margin: 0;
+  }
+}
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  display: inline-block;
+  text-indent: -9999px;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  transition: opacity .5s ease;
+  opacity: .7;
+}
+
+footer.footer .social-link:hover {
+  background-color: #1D809F;
+  text-decoration: none;
+  opacity: 1;
+}
+
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+a.github {
+  background-image: url(../images/github.svg);  
+}
+
+a:hover, a:focus, a:active {
+  outline: none;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #1D809F !important;
+}
+
+.text-primary {
+  color: #1D809F !important;
+}
+
+.text-secondary {
+  color: #ecb807 !important;
+}
