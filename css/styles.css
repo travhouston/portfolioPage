@@ -14,7 +14,7 @@ body {
 }
 
 #skills {
-  background-color: rgba(33, 37, 41);
+  background-color: #212529;
 }
 
 
@@ -51,7 +51,7 @@ h6 {
   display: table;
   width: 100%;
   color: white;
-  text-shadow: 1px 1px rgba(33, 37, 41);
+  text-shadow: 1px 1px #212529;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -78,7 +78,7 @@ h6 {
 }
 
 .skill-icon {
-  background-color: none;
+  background-color: transparent;
   height: 4rem;
   width: 4rem;
   display: block;
@@ -89,7 +89,7 @@ h6 {
 
 
 .personality-icon {
-  background-color: none;
+  background-color: transparent;
   color: #1D809F;
   height: 7rem;
   width: 7rem;
@@ -120,7 +120,7 @@ h6 {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
-  text-shadow: 1px 1px rgba(33, 37, 41);
+  text-shadow: 1px 1px #212529;
   margin: auto 2rem 2rem;
 }
 
