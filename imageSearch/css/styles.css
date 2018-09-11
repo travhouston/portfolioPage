@@ -48,6 +48,10 @@ li {
 	display: inline-block;
 }
 
+#search {
+    padding: 10px;
+}
+
 header {
 	position: fixed;
 	top: 0;
