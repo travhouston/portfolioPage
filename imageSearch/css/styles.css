@@ -1,0 +1,131 @@
+/* ========================================
+Fixes Box Sizing
+======================================== */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+/* ========================================
+List Styles, Margins, and Padding
+======================================== */
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* ========================================
+General CSS
+======================================== */
+
+body {
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+	margin: 0 20px 10px 20px;
+	padding: 0;
+	display: inline-block;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 75px;
+	background-color: #fff;
+	text-align: center;
+	padding: 25px 0;
+}
+
+.content {
+	padding-top: 75px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+input {
+    border: 2px solid #ccc;
+    width: 50%;
+    height: 35px;
+	border-radius: 5px;
+    font-size: 1em;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* ========================================
+Media Queries
+======================================== */
+
+@media screen and (min-width: 480px) {
+
+    input {
+        width: 50%;
+    }
+
+    .content {
+		max-width: 440px;
+	}
+	
+	li {
+		margin: 0 10px 10px;
+        float:left;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .content {
+		max-width: 660px;
+    }
+
+    li {
+		margin: 0 10px 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .content {
+        max-width: 880px;
+    }
+    
+    li {
+		margin: 0 10px 10px;
+    }
+
+}
