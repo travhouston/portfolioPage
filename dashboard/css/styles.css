@@ -1,0 +1,859 @@
+/* ========================================
+Fixes Box Sizing
+======================================== */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+/* ========================================
+List Styles, Margins, and Padding
+======================================== */
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* ========================================
+General CSS
+======================================== */
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    line-height: 1.4em;
+    color: #8a8c8a;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+	background: #7477be;
+	color: white;
+    display: flex;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	width: 100%;
+    padding: 10px;
+    z-index: 100;
+}
+
+header ul {
+    display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+}
+
+header li {
+    justify-content: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ========================================
+Navigation -- Main Nav
+======================================== */
+
+.main-nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+#tm {
+	font-size: .2em;
+    font-weight: 100;
+    vertical-align: super
+}
+
+#navigation-menus {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.profile-name{
+    display: none;
+}
+
+.alert-icon {
+	position: relative;
+}
+
+.alert-dot {
+	background-color: #81c98f;
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+    right: 0;
+}
+
+.dash {
+    display: none;
+    padding-bottom: 8px;
+}
+
+.profile-img {
+    margin-left: 10px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.main-nav {
+    background-color: #7477be;
+}
+
+.main-nav,
+.main-nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav-container {
+    justify-content: space-between;
+}
+
+.main-nav-container a {
+    display: block;
+    padding: .4em;
+}
+
+.app-name {
+    flex: 2 100%;
+}
+
+.alert-icon,
+.profile,
+.profile-name {
+    cursor: pointer;
+}
+
+/* ========================================
+Navigation -- Secondary Nav
+======================================== */
+
+.secondary-nav {
+	background: #4d4c72;
+	color: grey;
+	width: 100%;
+    padding: 10px;
+}
+
+.secondary-nav ul {
+	display: flex;
+	width: 100%;
+	padding: 0;
+    justify-content: space-around;
+}
+
+.dashboard,
+.members,
+.visitors,
+.settings {
+    fill: lightgrey;
+}
+
+/* ========================================
+Search Bar
+======================================== */
+
+.main-content {
+    margin-top: 140px;
+}
+
+.dash-title {
+    display: none;
+}
+
+#search-bar {
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background: white;
+	border-radius: 5px;
+    border: 2px solid lightgrey;
+
+    background-image: url(../icons/icon-search.svg);
+	background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* ========================================
+Alert
+======================================== */
+
+#alert {
+    background-color: #7477be;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.alert-title {
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.closing-btn {
+    font-weight: 700;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* ========================================
+Charts
+======================================== */
+
+#chart-timetables {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: grey;
+    padding: 0 10px 10px 10px;
+    
+}
+
+.hourly-traffic,
+.daily-traffic,
+.weekly-traffic,
+.monthly-traffic {
+	width: 80px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.active {
+	background: #81c98f;
+	color: white;
+}
+
+.main-chart,
+.secondary-chart,
+.tertiary-chart,
+#social-stats,
+#message-user {
+    padding-bottom: 30px;
+    border-bottom: 2px solid lightgrey;
+}
+
+#new-members,
+#recent-activity {
+    border-bottom: 2px solid lightgrey;
+}
+
+
+/* ========================================
+Social Stats
+======================================== */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container {
+    border: 1px solid lightgrey;
+    background: #fbfbfb;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    top:  15px;
+    left: 15px;
+    fill: white;
+    position: absolute;
+}
+
+.social-circle {
+    background-color: #7277be;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.social-name {
+    color: #7277be;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.social-number {
+    font-size: 2em;
+    padding-top: 5px;
+    color: grey;
+    display: block;
+}
+
+.social-group {
+    margin-left: 20px;
+}
+
+#twitter {
+    top: 20px;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+/* ========================================
+New Members
+======================================== */
+
+.members li {
+    border-bottom: 2px solid lightgrey;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-member-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.members span {
+    padding-left: 10px;
+}
+
+.member-name {
+    color: grey;
+}
+
+.member-email {
+    color: #7277be;
+    font-size: .8em;
+}
+
+.new-member-date {
+    margin-left: auto;
+    color: grey;
+    font-size: .8em;
+}
+
+/* ========================================
+Recent Activity
+======================================== */
+
+.user-activity li {
+    border-bottom: 2px solid lightgrey;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.user-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.activity-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-status a {
+    text-decoration: none;
+    color: #7277be;
+    font-weight: bold;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    fill: #8a8c8a;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* ========================================
+Message User Form
+======================================== */
+
+input[type="search"] {
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    color: #8a8c8a;
+    padding: 5px;
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: #8a8c8a;
+    border: 1px solid lightgrey;
+    background-color: #fbfbfb;
+    margin-bottom: 15px;
+}
+
+/* ========================================
+Buttons
+======================================== */
+
+button {
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.send-btn {
+    background-color: #7373be;
+    width: 100%;
+}
+
+.save-btn {
+    background-color: #7373be;
+    display: block;
+    float: left;
+    width: 48%;
+}
+
+.cancel-btn {
+    background-color: #a3a4a3;
+    display: block;
+    float: right;
+    width: 48%;
+}
+
+.start-over {
+    background-color: #7373be; 
+    color: white;
+}
+
+.new-message {
+    background-color: #7373be; 
+    color: white;
+}
+
+/* ========================================
+Settings
+======================================== */
+
+#settings {
+    margin-bottom: 120px;
+}
+
+.send-email-text,
+.public-profile-text {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.switch-setting {
+    position: relative;
+    width: 90px;
+}
+
+.switch-checkbox {
+    display: none;
+}
+
+.switch-container {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 1px solid #8a8c8a; 
+    border-radius: 20px;
+}
+
+.switch-background {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.switch-background:before, .switch-background:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 30px; 
+    padding: 0; 
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.switch-background:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #7373be; 
+    color: white;
+}
+
+.switch-background:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #fbfbfb; 
+    color: #8a8c8a;
+    text-align: right;
+}
+
+.switch-dial {
+    display: block; 
+    width: 22px; 
+    margin: 6px;
+    background: white;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #8a8c8a;
+    border-radius: 50%;
+    transition: all 0.3s ease-in 0s; 
+}
+
+.switch-checkbox:checked + .switch-container .switch-background{
+    margin-left: 0;
+}
+
+.switch-checkbox:checked + .switch-container .switch-dial {
+    right: 0px; 
+}
+
+#timezone {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	padding: 2px;
+	border-radius: 5px;
+	height: 2.5em;
+    border: 1px solid lightgrey;
+    color: #8a8c8a;
+}
+
+
+/* ========================================
+Media Queries
+======================================== */
+
+@media (min-width: 768px) {
+
+    main {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .main-content {
+        padding-top: 55px;
+        width: 90%;
+        margin: 0 auto;
+        margin-right: 0;
+    }
+
+    .dash {
+        display: flex;
+        font-size: 2em;
+        font-weight: 100;
+        padding-right: 0;
+    }
+
+    .profile {
+        padding-left: 0;
+    }
+
+    .profile-name {
+        display: flex;
+        width: 200px;
+    }
+
+    .secondary-nav {
+        width: 60px;
+		height: 100%;
+		top: 50px;
+		bottom: 0;
+		position: fixed;
+		height: 100%;
+    }
+    .secondary-nav ul {
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .secondary-nav li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+
+    .secondary-nav li img {
+        height: 20px;
+    }
+
+    #dash-search {
+        display: flex;
+    }
+    .search-box {
+        height: 60px;
+        background: #fbfbfb;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        border-left: 1px solid grey;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 0;
+
+    }
+
+    .dash-title {
+        display: flex;
+        padding-right: 25px;
+    }
+
+    #search-bar {
+        margin-top: 15px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #alert,
+    #charts,
+    #social-stats,
+    #new-members,
+    #recent-activity,
+    #message-user,
+    #settings {
+        margin-right: 4%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .send-btn {
+        background-color: #7373be;
+        width: 30%;
+        display: block;
+        margin: auto;
+        transition: all .3s ease;
+    }
+
+    #timezone {
+        width: 65%;
+        transition: all .3s ease;
+    }
+
+    input[type="search"],
+    textarea {
+        width: 65%;
+        margin: auto;
+        display: block;
+        transition: all .3s ease;
+    }
+
+    textarea {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+
+    #chart-timetables {
+        justify-content: flex-end;
+    }
+
+    .secondary-chart {
+        width: 50%;
+        float: left;
+        border-right: 2px solid lightgrey;
+        padding: 0 40px 40px 0px;
+        height: 300px;
+    }
+
+    .tertiary-chart {
+        width: 50%;
+        float: right;
+        padding: 0 0px 40px 25px;
+        height: 300px;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .flex-container {
+        justify-content: space-around;
+    }
+
+    .social-container {
+        padding-right: 80px;
+    }
+
+    #new-members {
+        width: 48%;
+        height: 420px;
+        float: left;
+        margin: 0;
+        padding: 0 25px 0 0;
+        align-items: stretch;
+        border-right: 2px solid lightgrey;
+    }
+
+    #recent-activity {
+        width: 48%;
+        height: 420px;
+        float: right;
+        margin-right: 4%;
+        padding-left: 25px;
+        align-items: stretch;
+    }
+
+    #message-user {
+        height: 400px;
+        width: 48%;
+        float: left;
+        margin-right: 0;
+        border-right: 2px solid lightgrey;
+        border-bottom: none;
+    }
+
+    #settings {
+        height: 400px;
+        width: 48%;
+        padding-left: 25px;
+        float: right;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+
+    input[type="search"] {
+        width: 90%;
+        margin-left: 0;
+        transition: all .3s ease;
+    }
+
+    textarea {
+        height: 89px;
+        width: 90%;
+        margin-left: 0;
+        transition: all .3s ease;
+
+    }
+
+    .send-btn {
+        width: 90%;
+        margin: 0;
+        transition: all .3s ease;
+    }
+
+    .send-email-text,
+    .public-profile-text {
+        width: 78%;
+        float: left;
+    }
+
+    .switch-setting {
+        float: right;
+        width: 22%;
+        max-width: 91px;
+    }
+
+    #timezone {
+        width: 100%;
+        transition: all .3s ease;
+    }
+}
+
+@media (min-width: 1250px) {
+
+    .secondary-chart {
+        height: 350px;
+        transition: all .3s ease;
+    }
+
+    .tertiary-chart {
+        height: 350px;
+        transition: all .3s ease;
+    }
+
+}
+
+
